@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>site teste em repositório</title>
+    <link rel="stylesheet" href="site.css"
 </head>
 <body>
      <header id="topo">
@@ -12,15 +13,15 @@
       </h1>
     <h3 style="text-align:center;">Tutoriais para iniciantes.</h3>
     </header>
-    <section>
+    <section class="section-html">
      <img src= "https://d502jbuhuh9wk.cloudfront.net/courses/6570c175e4b00d436e1c89c0/6570c175e4b00d436e1c89c0_scaled_cover.jpg?v=1" height="130px" align="left">
       <hr>
     <br>
       <p> <b> <ins>HTML</ins> </b> <i>(Linguagem de Marcação de Hipertexto)</i> é o bloco de construção mais básico da web.<mark> Define o significado e a estrutura do conteúdo da web.</mark> Outras tecnologias além do HTML geralmente são usadas para descrever a aparência/apresentação (CSS) ou a funcionalidade/comportamento <em>(JavaScript)</em> de uma página da web.
     </p> <hr>
   </section>
-<section class="linha">
-<section class="divisao">
+<div class="div-tabela-lista">
+<section class="estilo1">
     <table border="2">
       <thead>
         <tr>
@@ -52,7 +53,7 @@
       </tbody>        
     </table>
 </section>
-<section>
+<section class="estilo1">
 <h2>Protocolos</h2>
 <ol>
   <li>HTTP:Hypertext Transfer Protocol</li>
@@ -62,9 +63,8 @@
   <li>IP:Internet Protocol</li>
 </ol>
   </section>
-</section>
-  <section>
-    
+</div>
+  <section class="container mt-3">
     <h2>Formulário</h2>
     <form action="obrigado.html" method= "post">
       <label>Nome:</label>
@@ -77,19 +77,20 @@
       <input type="email" name="email" placeholder="Digite seu e-mail" required>
       <br>
       <label>Assunto:</label>
-      <select name="assunto">
+      <select name="assunto" class="form-control">
         <option value="Elogios">Elogios</option>
         <option value="Dúvidas">Dúvidas</option>
         <option value="Reclamações">Reclamações</option>
       </select>
       <br>
       <label>Mensagem:</label>
-      <textarea name="mensagem" placeholder="Sua mensagem aqui"></textarea>
+      <textarea name="mensagem" placeholder="Sua mensagem aqui" class="form-control"></textarea>
       <button type="submit">Enviar</button>
       <br>
       <label> <input type="checkbox" name="termo" value="aceito" required>
       Aceito os termos do site para envio dos dados.</label>
       <br>
+       <input class="btn btn-primary" type="submit" value="Enviar" >
     </form>
 </section>
 
