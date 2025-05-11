@@ -1,97 +1,101 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>site teste em repositório</title>
-    <link rel="stylesheet" href="site.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>site teste em repositório</title>
+  <link rel="stylesheet" href="site.css" />
 </head>
 <body>
-     <header id="topo">
-    <h1>HTML
-      <sup>Linguagem de Marcação de Hipertexto</sup>
-      </h1>
-    <h3 style="text-align:center;">Tutoriais para iniciantes.</h3>
-    </header>
-    <section class="section-html">
-     <img src= "https://d502jbuhuh9wk.cloudfront.net/courses/6570c175e4b00d436e1c89c0/6570c175e4b00d436e1c89c0_scaled_cover.jpg?v=1" height="130px" align="left">
-      <hr>
-    <br>
-      <p> <b> <ins>HTML</ins> </b> <i>(Linguagem de Marcação de Hipertexto)</i> é o bloco de construção mais básico da web.<mark> Define o significado e a estrutura do conteúdo da web.</mark> Outras tecnologias além do HTML geralmente são usadas para descrever a aparência/apresentação (CSS) ou a funcionalidade/comportamento <em>(JavaScript)</em> de uma página da web.
-    </p> <hr>
-  </section>
-<div class="div-tabela-lista">
-<section class="estilo1">
-    <table border="2">
-      <thead>
-        <tr>
-          <th>Tags HTML</th>
-          <th>Descrição</th>
-        </tr>
-        </thead>
-      <tbody>
-        <tr>
-          <td>p</td>
-          <td>Define um parágrafo</td>     
-        </tr>
-        <tr>
-          <td>h1 a h6</td>
-          <td>Define título 1 a título 6</td>
-        </tr>
-        <tr>
-          <td>body</td>
-          <td>Define o corpo da página</td>
-        </tr>
-        <tr>
-          <td>b</td>
-          <td>Especifica o texto em negrito</td>
-        </tr>
-        <tr>
-          <td>div</td>
-          <td>Divisões ou sessões de conteúdo</td>
-        </tr>
-      </tbody>        
-    </table>
-</section>
-<section class="estilo1">
-<h2>Protocolos</h2>
-<ol>
-  <li>HTTP:Hypertext Transfer Protocol</li>
-  <li>POP3:Post Office Protocol</li>
-  <li>SMTP:Simple Mail Transfer Protocol</li>
-  <li>FTP:File Transfer Protocol</li>
-  <li>IP:Internet Protocol</li>
-</ol>
-  </section>
-</div>
-  <section class="container mt-3">
-    <h2>Formulário</h2>
-    <form action="obrigado.html" method= "post">
-      <label>Nome:</label>
-      <input type="text" name="nome" placeholder="Digite seu nome" required>
-      <br>
-      <label>Idade</label>
-      <input type="number" name="Idade" min="12" max="96" placeholder="Idade aqui" required>
-      <br>
-      <label>E-mail:</label>
-      <input type="email" name="email" placeholder="Digite seu e-mail" required>
-      <br>
-      <label>Assunto:</label>
-      <select name="assunto" class="form-control">
-        <option value="Elogios">Elogios</option>
-        <option value="Dúvidas">Dúvidas</option>
-        <option value="Reclamações">Reclamações</option>
-      </select>
-      <br>
-      <label>Mensagem:</label>
-      <textarea name="mensagem" placeholder="Sua mensagem aqui" class="form-control"></textarea>
-      <br>
-      <label> <input type="checkbox" name="termo" value="aceito" required>
-      Aceito os termos do site para envio dos dados.</label>
-      <br>
-       <input class="btn btn-primary" type="submit" value="Enviar" >
-    </form>
-</section>
+  <div class="grid-site">
 
+    <header id="topo" class="topo">
+      <h1>HTML <sup>Linguagem de Marcação de Hipertexto</sup></h1>
+      <h3 style="text-align:center;">Tutoriais para iniciantes.</h3>
+      <nav class="menu">
+        <a href="#introducao" class="text-white">Introdução</a>
+        <a href="#tabela-e-lista" class="text-white">Tabela e Lista</a>
+        <a href="#formulario" class="text-white">Formulário</a>
+        <a href="#footer" class="text-white">Links</a>
+      </nav>
+    </header>
+
+    <section class="secao1" id="introducao">
+      <img src="https://d502jbuhuh9wk.cloudfront.net/courses/6570c175e4b00d436e1c89c0/6570c175e4b00d436e1c89c0_scaled_cover.jpg?v=1" height="130px" />
+      <p>
+        <b><ins>HTML</ins></b> <i>(Linguagem de Marcação de Hipertexto)</i> é o bloco de construção mais básico da web.
+        <mark>Define o significado e a estrutura do conteúdo da web.</mark>
+        Outras tecnologias além do HTML geralmente são usadas para descrever a aparência/apresentação (CSS) ou a funcionalidade/comportamento <em>(JavaScript)</em> de uma página da web.
+      </p>
+    </section>
+
+    <section class="secao2" id="tabela-e-lista">
+      <div>
+        <h2>Tags HTML</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Tag</th>
+              <th>Descrição</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>p</td><td>Define um parágrafo</td></tr>
+            <tr><td>h1 a h6</td><td>Define título 1 a 6</td></tr>
+            <tr><td>body</td><td>Define o corpo da página</td></tr>
+            <tr><td>b</td><td>Texto em negrito</td></tr>
+            <tr><td>div</td><td>Divisão de conteúdo</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <h2>Protocolos</h2>
+        <ol>
+          <li>HTTP: Hypertext Transfer Protocol</li>
+          <li>POP3: Post Office Protocol</li>
+          <li>SMTP: Simple Mail Transfer Protocol</li>
+          <li>FTP: File Transfer Protocol</li>
+          <li>IP: Internet Protocol</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="secao3" id="formulario">
+      <h2>Formulário</h2>
+      <form action="obrigado.html" method="post">
+        <label>Nome:</label>
+        <input type="text" name="nome" placeholder="Digite seu nome" required><br>
+
+        <label>Idade:</label>
+        <input type="number" name="idade" min="12" max="96" placeholder="Idade" required><br>
+
+        <label>E-mail:</label>
+        <input type="email" name="email" placeholder="Digite seu e-mail" required><br>
+
+        <label>Assunto:</label>
+        <select name="assunto">
+          <option value="Elogios">Elogios</option>
+          <option value="Dúvidas">Dúvidas</option>
+          <option value="Reclamações">Reclamações</option>
+        </select><br>
+
+        <label>Mensagem:</label>
+        <textarea name="mensagem" placeholder="Sua mensagem aqui"></textarea><br>
+
+        <label><input type="checkbox" name="termo" value="aceito" required> Aceito os termos do site.</label><br>
+
+        <input type="submit" value="Enviar">
+      </form>
+    </section>
+
+    <footer class="rodape" id="footer">
+      <p>Links rápidos:</p>
+      <a href="#topo">Topo</a> |
+      <a href="#introducao">Introdução</a> |
+      <a href="#tabela-e-lista">Tabela e Lista</a> |
+      <a href="#formulario">Formulário</a>
+    </footer>
+
+  </div>
 </body>
-</html> 
+</html>

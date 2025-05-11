@@ -1,67 +1,112 @@
-.section-html{
-    font-size: 24px;
-    font-family: Cambria, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin-top: 30px;
+body {
+  margin: 0;
+  font-family: Cambria, Georgia, Times, 'Times New Roman', serif;
 }
 
-.estilo1{
-    font-size: 120%; 
-    padding-top: 5px;
-    height: 200px; 
-    width: 50%;
-  }
+.grid-site {
+  display: grid;
+  grid-template-areas:
+    "topo"
+    "menu"
+    "secao1"
+    "secao2"
+    "secao3"
+    "rodape";
+  gap: 20px;
+  padding: 10px;
+}
 
 #topo {
-  padding-top:60px; 
+  grid-area: topo;
   text-align: center;
-  border-width:16px;
-  border-style:groove; 
-  border-color:purple;
-  margin:1px; 
-  color:white;
-  height:200px;
-  font-size:120%; 
-  background-color:blue;
+  background-color: blueviolet;
+  padding: 20px;
+  color: white;
+  border: 10px groove purple;
 }
-h1 {
+
+.menu {
+  grid-area: menu;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  background-color: purple;
+  padding: 10px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  color: yellow;
+}
+
+.secao1 {
+  grid-area: secao1;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 20px;
+  align-items: center;
+}
+
+.secao2 {
+  grid-area: secao2;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.secao3 {
+  grid-area: secao3;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+form input,
+form select,
+form textarea {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #444;
+  padding: 8px;
+  text-align: left;
+}
+
+.rodape {
+  grid-area: rodape;
+  background-color: #111;
+  color: white;
   text-align: center;
+  padding: 20px;
 }
-.div-tabela-lista{
-    background-color: blueviolet;
-    display: flex;
-    flex-direction: row;
-    height: 260px;
+
+.rodape a {
+  color: lightblue;
+  text-decoration: none;
+}
+
+.rodape a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 800px) {
+  .secao1 {
+    grid-template-columns: 1fr;
   }
-
-body{
-  margin:0px;
-}
-
-section{
-  margin-left:20px;
-  margin-right:20px;
-  height: 200px;
-}
-
-table, tr{
-    border: 1px #fff solid;
-}
-
-td, th{
-    border: 1px #fff solid;
-}
-
-@media (max-width:800px) {
-  .div-tabela-lista{
-    background-color:blueviolet;
-    display:flex;
-    flex-direction: column;
-    height: auto;
-    padding: 10px;
-  }
-  .estilo1{
-    width: 100%;
-    height: auto;
-    margin-bottom: 10px;
+  .secao2 {
+    grid-template-columns: 1fr;
   }
 }
