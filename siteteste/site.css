@@ -56,5 +56,12 @@ td, th{
     background-color:blueviolet;
     display:flex;
     flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+  .estilo1{
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
   }
 }
